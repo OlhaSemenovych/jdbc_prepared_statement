@@ -1,0 +1,41 @@
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### IntelliJ IDEA ###
+.idea
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Mac OS ###
+.DS_Store
+
+### Docker ###
+docker
+
+db.properties
+
+src/main/resources/sql/find_longest_project.sql
+src/main/resources/sql/find_max_projects_client.sql
+src/main/resources/sql/find_max_salary_worker.sql
+src/main/resources/sql/find_youngest_eldest_workers.sql
+src/main/resources/sql/print_project_prices.sql
+
+src/main/java/module5/MainExecuteSelect.java
+src/main/java/module5/services/DatabaseQueryService.java
+
+src/main/java/module5/dto/LongestProject.java
+src/main/java/module5/dto/MaxProjectCountClient.java
+src/main/java/module5/dto/MaxSalaryWorker.java
+src/main/java/module5/dto/ProjectPrices.java
+src/main/java/module5/dto/YoungestEldestWorkers.java
