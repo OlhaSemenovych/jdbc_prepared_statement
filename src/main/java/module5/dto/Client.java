@@ -7,16 +7,20 @@ import lombok.Setter;
 @Setter
 public class Client {
 
+    private Long id;
     private String name;
 
-    public Client(String name) {
+    public Client(Long id, String name) {
+        this.id = id;
         this.name = name;
     }
 
     @Override
     public String toString() {
         return "Client{" +
-                "client='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 '}';
     }
+
 }

@@ -60,7 +60,7 @@ public class FileUtils {
             ArrayList<Client> clients = new ArrayList<>();
             while ((line = reader.readLine()) != null) {
                 String[] parameter = line.split(",");
-                clients.add(new Client(parameter[0]));
+                clients.add(new Client(Long.getLong(parameter[0]), parameter[1]));
             }
             return clients;
         } catch (IOException | URISyntaxException e) {
